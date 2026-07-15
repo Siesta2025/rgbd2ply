@@ -1,0 +1,46 @@
+{
+  "concepts": [
+    {
+      "label": 2,
+      "name": "ice_box",
+      "prompt": "transparent plastic box",
+      "max_instances": 1
+    },
+    {
+      "label": 3,
+      "name": "transparent_cup",
+      "prompt": "transparent plastic cup",
+      "max_instances": 1
+    },
+    {
+      "label": 4,
+      "name": "bucket_a",
+      "prompt": "left plastic bucket",
+      "max_instances": 1
+    },
+    {
+      "label": 5,
+      "name": "bucket_b",
+      "prompt": "right plastic bucket",
+      "max_instances": 1
+    },
+    {
+      "label": 6,
+      "name": "metal_pot",
+      "prompt": "stainless steel pot",
+      "max_instances": 1
+    },
+    {
+      "label": 7,
+      "name": "metal_funnel",
+      "prompt": "metal funnel",
+      "max_instances": 1
+    },
+    {
+      "label": 1,
+      "name": "hand",
+      "prompt": "hand",
+      "max_instances": 2
+    }
+  ]
+}

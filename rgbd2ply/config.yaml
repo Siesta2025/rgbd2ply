@@ -1,0 +1,48 @@
+# rgbd2ply — multi-camera RGBD → labelled pointcloud pipeline
+# ====================================================================
+# This is the single source of truth for all paths and defaults.
+# Edit this file when moving to a new machine or changing data roots.
+#
+# Every value can be overridden by an environment variable:
+#   RGBD2PLY_PATHS_DATA_ROOT=/data/ego_data
+#   RGBD2PLY_DEFAULTS_THR=0.6
+#   RGBD2PLY_ENVS_SAM3=~/envs/sam3/bin/python
+# ====================================================================
+
+paths:
+  # Root of this repo (rgbd2ply/)
+  project_root: /home/descfly/siesta/infra
+  # Where recording folders / ROS bags live
+  data_root: /home/descfly/siesta/infra/data
+  # Output root for pipeline runs
+  runs_root: /home/descfly/siesta/infra/runs
+  # SAM3 installation (vendored in deps/)
+  sam3_repo: /home/descfly/siesta/infra/deps/sam3
+  sam3_checkpoint: /home/descfly/siesta/infra/deps/sam3/ckpt/sam3.pt
+  # Cam1→Cam3 extrinsic calibration
+  extrinsic: /home/descfly/siesta/infra/config/cam1_cam3_extrinsic.json
+  # Label registry
+  registry: /home/descfly/siesta/infra/rgbd2ply/object_registry.json
+  # Scratch / temp directory
+  tmp: /tmp/rgbd2ply
+
+# Python interpreter paths.
+# If using a single venv, point both to the same python.
+envs:
+  sam3: /home/descfly/siesta/infra/venv/bin/python
+  wilor: /home/descfly/siesta/infra/venv/bin/python
+
+# Pipeline-wide defaults. Can be overridden per-run via CLI.
+defaults:
+  # Frame subsampling stride (every Nth frame)
+  stride: 30
+  # JPEG quality for extracted frames
+  quality: 90
+  # SAM3 text-prompt confidence threshold
+  thr: 0.5
+  # SAM3 chunk size (frames per GPU session)
+  chunk: 500
+  # Max timestamp delta for cam1↔cam3 pairing (ms)
+  max_pair_dt_ms: 200.0
+  # Statistical outlier removal std threshold
+  sor_std: 2.0

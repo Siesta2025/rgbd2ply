@@ -1,0 +1,573 @@
+{
+  "schema": "calibrige.stereo_extrinsic.v1",
+  "created_at": "2026-07-02T12:14:56",
+  "method": "OpenCV stereoCalibrate with CALIB_FIX_INTRINSIC from paired ChArUco detections",
+  "camera_pair": [
+    "cam1",
+    "cam3"
+  ],
+  "image_dirs": {
+    "cam1": "dc/cam1/rgb",
+    "cam3": "dc/cam3/rgb"
+  },
+  "intrinsics_files": {
+    "cam1": "dc/cam1/camera_1_intrinsics.json",
+    "cam3": "dc/cam3/camera_3_intrinsics.json"
+  },
+  "image_size": [
+    1920,
+    1080
+  ],
+  "board": {
+    "preset": null,
+    "squares_x": 9,
+    "squares_y": 6,
+    "square_length_mm": 30.0,
+    "marker_length_mm": 22.0,
+    "aruco_dict": "5x5_250",
+    "input_description": "custom 6x9, checker 30mm, marker 22mm, DICT_5X5_250",
+    "opencv_squares_x": 9,
+    "opencv_squares_y": 6,
+    "legacy_pattern": true
+  },
+  "rms_error_px": 1.0653840073949195,
+  "num_pairs_total": 50,
+  "num_pairs_used": 48,
+  "num_pairs_skipped": 2,
+  "cam1_to_cam3": {
+    "source_frame": "cam1",
+    "target_frame": "cam3",
+    "convention": "p_cam3 = R @ p_cam1 + T",
+    "rotation_matrix": [
+      [
+        0.4416494154714695,
+        0.7182259277603745,
+        -0.5376777013290199
+      ],
+      [
+        -0.8970581609013469,
+        0.36368671217121207,
+        -0.2510351197549603
+      ],
+      [
+        0.015246303617683032,
+        0.5931976838144628,
+        0.8049124537135417
+      ]
+    ],
+    "translation_mm": [
+      643.8508549286905,
+      40.80701391201381,
+      300.68823183518333
+    ],
+    "translation_m": [
+      0.6438508549286905,
+      0.04080701391201381,
+      0.30068823183518334
+    ],
+    "rvec_rodrigues": [
+      0.5588225369818914,
+      -0.3659966704635349,
+      -1.0692040732792945
+    ],
+    "transform_matrix_4x4": [
+      [
+        0.4416494154714695,
+        0.7182259277603745,
+        -0.5376777013290199,
+        643.8508549286905
+      ],
+      [
+        -0.8970581609013469,
+        0.36368671217121207,
+        -0.2510351197549603,
+        40.80701391201381
+      ],
+      [
+        0.015246303617683032,
+        0.5931976838144628,
+        0.8049124537135417,
+        300.68823183518333
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_angle_deg": 72.23435831472571,
+    "translation_norm_mm": 711.7742258195291
+  },
+  "cam3_to_cam1": {
+    "source_frame": "cam3",
+    "target_frame": "cam1",
+    "convention": "p_cam1 = R @ p_cam3 + T",
+    "rotation_matrix": [
+      [
+        0.4416494154714695,
+        -0.8970581609013469,
+        0.015246303617683032
+      ],
+      [
+        0.7182259277603745,
+        0.36368671217121207,
+        0.5931976838144628
+      ],
+      [
+        -0.5376777013290199,
+        -0.2510351197549603,
+        0.8049124537135417
+      ]
+    ],
+    "translation_mm": [
+      -252.3344729550988,
+      -655.6389090185512,
+      114.4005388117836
+    ],
+    "translation_m": [
+      -0.2523344729550988,
+      -0.6556389090185512,
+      0.11440053881178361
+    ],
+    "rvec_rodrigues": [
+      -0.5588225369818913,
+      0.365996670463535,
+      1.0692040732792945
+    ],
+    "transform_matrix_4x4": [
+      [
+        0.4416494154714695,
+        -0.8970581609013469,
+        0.015246303617683032,
+        -252.3344729550988
+      ],
+      [
+        0.7182259277603745,
+        0.36368671217121207,
+        0.5931976838144628,
+        -655.6389090185512
+      ],
+      [
+        -0.5376777013290199,
+        -0.2510351197549603,
+        0.8049124537135417,
+        114.4005388117836
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_angle_deg": 72.23435831472571,
+    "translation_norm_mm": 711.7742258195291
+  },
+  "essential_matrix": [
+    [
+      270.356988378581,
+      -85.14968828872185,
+      108.32937998429418
+    ],
+    [
+      122.98243621041082,
+      -165.9687515892098,
+      -679.9169287760427
+    ],
+    [
+      -595.594057658468,
+      204.85134513155285,
+      -139.68815503304447
+    ]
+  ],
+  "fundamental_matrix": [
+    [
+      3.194158059595196e-07,
+      -1.006243012498168e-07,
+      -0.00010665833871879992
+    ],
+    [
+      1.4535838402996627e-07,
+      -1.9621144391040062e-07,
+      -0.000938909932428928
+    ],
+    [
+      -0.0011711024650149719,
+      0.00047180383083922085,
+      0.9999999999999999
+    ]
+  ],
+  "intrinsics": {
+    "cam1": {
+      "camera_matrix": [
+        [
+          1125.8963623046875,
+          0.0,
+          952.6001586914062
+        ],
+        [
+          0.0,
+          1125.634521484375,
+          531.8533935546875
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dist_coeffs": [
+        0.08804064989089966,
+        -0.11589903384447098,
+        0.00017353903967887163,
+        7.827701665519271e-06,
+        0.04843766987323761
+      ],
+      "source_device": {
+        "name": "Orbbec Femto Bolt",
+        "serial_number": "CL8L563019P",
+        "connection_type": "USB3.1",
+        "firmware_version": "1.1.3",
+        "hardware_version": "1.3"
+      }
+    },
+    "cam3": {
+      "camera_matrix": [
+        [
+          1124.83447265625,
+          0.0,
+          946.59033203125
+        ],
+        [
+          0.0,
+          1124.373046875,
+          531.3353881835938
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dist_coeffs": [
+        0.08038117736577988,
+        -0.10736027359962463,
+        -0.00012832698121201247,
+        -8.061093103606254e-05,
+        0.044676270335912704
+      ],
+      "source_device": {
+        "name": "Orbbec Femto Bolt",
+        "serial_number": "CL8L56300XS",
+        "connection_type": "USB3.1",
+        "firmware_version": "1.1.3",
+        "hardware_version": "1.3"
+      }
+    }
+  },
+  "pair_details": [
+    {
+      "frame": "000001.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000002.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000003.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000004.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000005.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000006.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000007.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000008.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000009.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000010.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000011.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000012.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000013.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000014.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000015.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000016.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000017.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000018.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000019.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000020.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000021.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000022.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000023.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000024.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000025.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000026.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000027.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000028.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000029.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000030.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000031.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000032.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000033.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000034.png",
+      "common_corners": 38,
+      "cam1_corners": 40,
+      "cam3_corners": 38
+    },
+    {
+      "frame": "000035.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000036.png",
+      "common_corners": 38,
+      "cam1_corners": 40,
+      "cam3_corners": 38
+    },
+    {
+      "frame": "000037.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000038.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000039.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000040.png",
+      "common_corners": 40,
+      "cam1_corners": 40,
+      "cam3_corners": 40
+    },
+    {
+      "frame": "000041.png",
+      "common_corners": 38,
+      "cam1_corners": 40,
+      "cam3_corners": 38
+    },
+    {
+      "frame": "000042.png",
+      "common_corners": 26,
+      "cam1_corners": 40,
+      "cam3_corners": 26
+    },
+    {
+      "frame": "000043.png",
+      "common_corners": 10,
+      "cam1_corners": 40,
+      "cam3_corners": 10
+    },
+    {
+      "frame": "000046.png",
+      "common_corners": 6,
+      "cam1_corners": 29,
+      "cam3_corners": 6
+    },
+    {
+      "frame": "000047.png",
+      "common_corners": 11,
+      "cam1_corners": 30,
+      "cam3_corners": 11
+    },
+    {
+      "frame": "000048.png",
+      "common_corners": 10,
+      "cam1_corners": 32,
+      "cam3_corners": 10
+    },
+    {
+      "frame": "000049.png",
+      "common_corners": 9,
+      "cam1_corners": 29,
+      "cam3_corners": 9
+    },
+    {
+      "frame": "000050.png",
+      "common_corners": 13,
+      "cam1_corners": 38,
+      "cam3_corners": 13
+    }
+  ],
+  "skipped_pairs": [
+    {
+      "frame": "000044.png",
+      "reason": "board_not_detected",
+      "cam1_corners": 33,
+      "cam3_corners": 0
+    },
+    {
+      "frame": "000045.png",
+      "reason": "board_not_detected",
+      "cam1_corners": 24,
+      "cam3_corners": 0
+    }
+  ]
+}

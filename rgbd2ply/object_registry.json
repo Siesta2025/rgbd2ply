@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "notes": "Stable labels for the rgbd2ply split annotation pipeline. Keep ids stable once masks/point clouds are exported.",
+  "labels": [
+    {
+      "id": 1,
+      "key": "hand",
+      "name_zh": "手",
+      "name_en": "hand",
+      "kind": "hand",
+      "prompts": ["hand", "gloved hand"],
+      "max_instances": 2,
+      "auto": true
+    },
+    {
+      "id": 2,
+      "key": "ice_box",
+      "name_zh": "冰盒 / 透明塑料盒",
+      "name_en": "transparent plastic box",
+      "kind": "object",
+      "prompts": ["transparent plastic box", "clear plastic container", "plastic storage box"],
+      "max_instances": 1,
+      "auto": true
+    },
+    {
+      "id": 3,
+      "key": "transparent_cup",
+      "name_zh": "透明杯",
+      "name_en": "transparent cup",
+      "kind": "object",
+      "prompts": ["transparent plastic cup", "clear plastic cup", "transparent cup", "cup"],
+      "max_instances": 1,
+      "auto": true
+    },
+    {
+      "id": 4,
+      "key": "bucket_a",
+      "name_zh": "桶 A",
+      "name_en": "bucket A",
+      "kind": "object",
+      "prompts": ["left plastic bucket", "plastic bucket", "translucent plastic bucket"],
+      "max_instances": 1,
+      "auto": true
+    },
+    {
+      "id": 5,
+      "key": "bucket_b",
+      "name_zh": "桶 B",
+      "name_en": "bucket B",
+      "kind": "object",
+      "prompts": ["right plastic bucket", "plastic bucket", "translucent plastic bucket"],
+      "max_instances": 1,
+      "auto": true
+    },
+    {
+      "id": 6,
+      "key": "metal_pot",
+      "name_zh": "不锈钢锅 / 金属桶",
+      "name_en": "stainless steel pot",
+      "kind": "object",
+      "prompts": ["stainless steel pot", "metal pot", "steel bucket", "silver pot"],
+      "max_instances": 1,
+      "auto": true
+    },
+    {
+      "id": 7,
+      "key": "metal_funnel",
+      "name_zh": "金属漏斗 / 金属碗",
+      "name_en": "metal funnel",
+      "kind": "object",
+      "prompts": ["metal funnel", "stainless steel funnel", "funnel", "metal bowl"],
+      "max_instances": 1,
+      "auto": true
+    }
+  ]
+}

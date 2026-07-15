@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[codz]
+*.so
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vendored dependencies (installed separately)
+deps/
+
+# Data & outputs (large files)
+data/
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment config
+.env
+.envrc
